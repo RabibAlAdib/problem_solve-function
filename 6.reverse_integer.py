@@ -1,13 +1,15 @@
 # 6  reverse number
 
 def reverse_num(num):
-    reverse_done = reversed(num)
-    for x in reverse_done:
-        print(x, end=' ')
-    return reverse_done
-
-
-num = list(map(int, input("NUmber: ").split()))
+    a = str(num)
+    lst = []
+    for x in a: 
+        lst.append(x)
+    reversed_lst = reversed(lst)
+    for x in reversed_lst:
+        print(int(x),end="")
+    return
+num = int(input("number: "))
 reverse_num(num)
 
 
