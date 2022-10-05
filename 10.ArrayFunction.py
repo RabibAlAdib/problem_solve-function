@@ -13,6 +13,9 @@ def sort_f(arry):
     return x
 
 
-arry = array.array('i', [5, 17, 8, 12, 7])
+inp = input("Enter the array list, by seperating with space: ").split()
+lst= [int(x) for x in inp]
+arry = array.array('i', lst)
+sorted = array. array('i', sort_f(arry))
 print("Unsorted Array: ", arry)
-print("Sorted Array: ", sort_f(arry))
+print("Sorted Array: ", sorted)
